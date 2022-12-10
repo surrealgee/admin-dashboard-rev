@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 1.25rem;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Main Layout */
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 5fr;
+}
+
+/* Header */
+
+header {
+    grid-area: 1 / 2 / 2 / -1;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 2fr 1fr;
+    padding: 1em 2em;
+    font-weight: 700;
+    gap: 2rem;
+}
+
+.search-panel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-bar {
+    padding: 0.5em 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #e2e8f0;
+    flex: 1;
+    outline: none;
+}
+
+.info-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.profile-pic {
+    padding: 3px;
+    border: 1px solid #dee1e6;
+    border-radius: 50%;
+    background-color: #dee1e6;
+    width: 1.75rem;
+}
+
+.user-name {
+    font-size: 1.25rem;
+}
+
+.active-user-panel {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 0 1rem;
+    align-items: center;
+}
+
+.profile-big {
+    grid-area: 1 / 1 / -1 / 2;
+    width: 50px;
+}
+
+.greeting {
+    align-self: flex-end;
+    font-size: 0.75rem;
+}
+
+.user-name.big {
+    font-size: 1.5rem;
+}
+
+.actions-panel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: inherit;
+    background-color: #1992d4;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    flex: 1;
+}
+
+/* Navigation */
+
+nav {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-area: 1 / 1 / -1 / 2;
+    background-color: #1992d4;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    align-items: flex-start;
+    gap: 3rem;
+    font-weight: 700;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    width: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main {
+    background-color: #e2e8f0;
+}
